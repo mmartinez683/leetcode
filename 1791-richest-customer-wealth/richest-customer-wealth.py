@@ -6,10 +6,8 @@ class Solution(object):
         """
 
         max_wealth = 0 
-
         for money in accounts:
-            wealth = sum(money)
-            max_wealth = max(max_wealth, wealth)
+            wealth_sum = sum(money)
+            max_wealth = max(max_wealth, wealth_sum)
 
         return max_wealth
-    
